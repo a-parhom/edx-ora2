@@ -1,11 +1,13 @@
 
-from .base import BaseBackend
+from .base import BaseBackend, Settings
 from .. import exceptions
 
 from django.conf import settings
 import django.core.cache
 from django.core.urlresolvers import reverse
 from django.utils.encoding import smart_text
+
+import os
 
 
 class Backend(BaseBackend):
@@ -39,13 +41,49 @@ class Backend(BaseBackend):
         return self._get_url(key)
 
     def get_download_url(self, key):
-        make_download_url_available(self._get_key_name(key), self.DOWNLOAD_URL_TIMEOUT)
-        return self._get_url(key)
+        file_path = self._get_file_path(self._get_key_name(key))
+        if not os.path.exists(file_path):
+            return ''
+        else:
+            make_download_url_available(self._get_key_name(key), self.DOWNLOAD_URL_TIMEOUT)
+            return self._get_url(key)
 
     def _get_url(self, key):
         key_name = self._get_key_name(key)
-        url = reverse("openassessment-filesystem-storage", kwargs={'key': key_name})
+        key_name = key_name.split("|", 1)
+        if len(key_name) == 1:
+            url = reverse("openassessment-filesystem-storage", kwargs={'key': key_name[0]})
+        else:
+            url = reverse("openassessment-filesystem-storage", kwargs={'key': key_name[0], 'filename': key_name[1]})
         return url
+
+    def _get_file_path(self, key):
+        return os.path.join(self._get_data_path(key), "content")
+
+    def _get_data_path(self, key):
+        return os.path.join(self._get_bucket_path(), key)
+
+    def _get_bucket_path(self):
+        """
+        Returns the path to the bucket directory.
+        """
+        dir_path = os.path.join(
+            self._get_root_directory_path(),
+            Settings.get_bucket_name(),
+        )
+        return os.path.abspath(dir_path)
+
+    def _get_root_directory_path(self):
+        """
+        Returns the path to the root directory in which bucket directories are stored.
+
+        Raises:
+            FileUploadInternalError if the root directory setting does not exist.
+        """
+        root_dir = getattr(settings, "ORA2_FILEUPLOAD_ROOT", None)
+        if not root_dir:
+            raise exceptions.FileUploadInternalError("Undefined file upload root directory setting")
+        return root_dir
 
 
 def get_cache():
