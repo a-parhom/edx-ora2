@@ -18,14 +18,22 @@ from .backends.filesystem import is_download_url_available, is_upload_url_availa
 
 
 @require_http_methods(["PUT", "GET"])
-def filesystem_storage(request, key):
+def filesystem_storage(request, key, filename=None):
     """
     Uploading and download files to the local filesystem backend.
     """
     if request.method == "PUT":
-        if not is_upload_url_available(key):
-            raise Http404()
+        if filename != None:
+            if not is_upload_url_available(key+"|"+filename):
+                raise Http404()
+        else:
+            if not is_upload_url_available(key):
+                raise Http404()
         content, metadata = get_content_metadata(request)
+        if filename != None:
+            if isinstance(filename, unicode):
+                filename = filename.encode("utf-8")
+            metadata['Filename'] = filename
         save_to_file(key, content, metadata)
         return HttpResponse()
     elif request.method == "GET":
@@ -47,11 +55,8 @@ def download_file(key):
     with open(file_path, 'r') as f:
         response = HttpResponse(f.read(), content_type=content_type)
 
-    file_name = os.path.basename(os.path.dirname(file_path))
-    file_extension = Settings.guess_extension(content_type)
-    if not file_name.endswith(file_extension):
-        file_name += file_extension
-    response['Content-Disposition'] = 'attachment; filename=' + file_name
+    file_name = metadata.get("Filename", os.path.basename(os.path.dirname(file_path)))
+    response['Content-Disposition'] = 'attachment; filename=' + file_name.encode("utf-8")
     return response
 
 
