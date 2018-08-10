@@ -1,0 +1,457 @@
+# #-#-#-#-#  djangojs.po (edx-ora2)  #-#-#-#-#
+# edX translation file
+# Copyright (C) 2018 edX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# 
+# Translators:
+# Andrii Parkhomenko <andriy.parhomenko@gmail.com>, 2017-2018
+# Denis <prohibiti@gmail.com>, 2015
+# Irene Korotkova <irca.gav@gmail.com>, 2017
+# IvanPrimachenko <jastudent1@gmail.com>, 2014
+# Natalia Vynogradenko <tannaha@gmail.com>, 2017
+# Nikita <nikita.gritsenko@gmail.com>, 2014
+# fayçal fatihi <ofaycal.geo.x@gmail.com>, 2014
+# olexiim <olexiim@gmail.com>, 2016
+# Zapadenska <oruda@ymail.com>, 2014
+# Tetiana Korshun, 2014
+# Tsybulska Karolina <kirakivuk@gmail.com>, 2014
+# Юра Антонов <yuraantonov11@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: edx-platform\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-29 13:04-0400\n"
+"PO-Revision-Date: 2018-08-10 21:24+0000\n"
+"Last-Translator: Andrii Parkhomenko <andriy.parhomenko@gmail.com>\n"
+"Language-Team: Ukrainian (http://www.transifex.com/open-edx/edx-platform/language/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:53
+#: openassessment/xblock/static/js/src/oa_server.js:89
+#: openassessment/xblock/static/js/src/oa_server.js:113
+msgid "This section could not be loaded."
+msgstr "Не вдалося завантажити цей розділ."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:134
+msgid "The staff assessment form could not be loaded."
+msgstr "Не вдалося завантажити форму оцінки викладача."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:156
+msgid "The display of ungraded and checked out responses could not be loaded."
+msgstr "Не вдалося завантажити екран неперевірених та перевірених відповідей."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:191
+msgid "This response could not be submitted."
+msgstr "Не вдалося відправити цю відповідь на перевірку."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:215
+msgid "This response could not be saved."
+msgstr "Не вдалося зберегти цю відповідь."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:241
+msgid "This feedback could not be submitted."
+msgstr "Не вдалося відправити цей відгук."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:267
+#: openassessment/xblock/static/js/src/oa_server.js:359
+#: openassessment/xblock/static/js/src/oa_server.js:383
+msgid "This assessment could not be submitted."
+msgstr "Не вдалося відправити це завдання."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:407
+msgid "One or more rescheduling tasks failed."
+msgstr "Одна або кілька задач перепланування провалилася."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:460
+msgid "This problem could not be saved."
+msgstr "Не вдалося зберегти це завдання."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:482
+msgid "The server could not be contacted."
+msgstr "Сервер не відповідає."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:509
+msgid "Could not retrieve upload url."
+msgstr "Не вдалося отримати URL вивантаження."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:529
+#: openassessment/xblock/static/js/src/oa_server.js:549
+msgid "Server error."
+msgstr "Помилка серверу."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:570
+msgid "Could not retrieve download url."
+msgstr "Не вдалося отримати URL завантаження."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/oa_server.js:596
+msgid "The submission could not be removed from the grading pool."
+msgstr "Відповідь не може бути видалена з черги оцінювання."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_base.js:324
+msgid "Unable to load"
+msgstr "Неможливо завантажити"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:48
+msgid "Unit Name"
+msgstr "Назва блоку"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:48
+msgid "Units"
+msgstr "Блоки"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:52
+msgid "Assessment"
+msgstr "Завдання"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:52
+msgid "Assessments"
+msgstr "Завдання"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:56
+msgid "Total Responses"
+msgstr "Всього відповідей"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:60
+msgid "Training"
+msgstr "Тренування"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:64
+msgid "Peer"
+msgstr "Взаємооцінка"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:68
+msgid "Self"
+msgstr "Самооцінка"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:72
+msgid "Waiting"
+msgstr "Очікування"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:76
+msgid "Staff"
+msgstr "Персонал"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:81
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:82
+msgid "Final Grade Received"
+msgstr "Отримано фінальну оцінку"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:111
+msgid "List of Open Assessments is unavailable"
+msgstr "Перелік відкритих завдань недоступний"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:212
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:262
+msgid "Please wait"
+msgstr "Будь ласка, зачекайте"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:235
+msgid "Block view is unavailable"
+msgstr "Блочний вид недоступний"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_course_items_listing.js:247
+msgid "Back to Full List"
+msgstr "Назад до повного списку"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_peer.js:193
+msgid ""
+"If you leave this page without submitting your peer assessment, you will "
+"lose any work you have done."
+msgstr "Якщо ви залишите цю сторінку без збереження вашого перехресного оцінювання, ви втратите всі результати роботи"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:130
+msgid ""
+"After you upload new files all your previously uploaded files will be "
+"overwritten. Continue?"
+msgstr "Після завантаження нового файлу усі файли, завантажені раніше, будуть переписані новими. Продовжити? "
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:283
+msgid "Your file "
+msgstr "Ваш файл"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:307
+msgid "Status of Your Response"
+msgstr "Статус вашої відповіді"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:382
+msgid "This response has not been saved."
+msgstr "Ця відповідь не була збережена."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:386
+msgid ""
+"If you leave this page without saving or submitting your response, you will "
+"lose any work you have done on the response."
+msgstr "Якщо ви залишите цю сторінку без збереження чи відправлення на перевірку вашої відповіді, ви втратите всі результати роботи."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:404
+msgid "Saving..."
+msgstr "Збереження ..."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:426
+msgid "This response has been saved but not submitted."
+msgstr "Ця відповідь була збережена, але не відправлена на перевірку."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:431
+msgid "Error"
+msgstr "Помилка"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:457
+msgid "Do you want to upload your file before submitting?"
+msgstr "Ви хочете завантажити ваш файл перед поданням на перевірку?"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:533
+msgid ""
+"You're about to submit your response for this assignment. After you submit "
+"this response, you can't change it or submit a new response."
+msgstr "Ви відправляєте на перевірку відповідь на це завдання. Після відправлення ви не зможете змінити відповідь або надіслати її ще раз."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:574
+msgid "File size must be 10MB or less."
+msgstr "Розмір файлу має бути 10мб або менше. "
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:581
+#: openassessment/xblock/static/js/src/lms/oa_response.js:588
+#: openassessment/xblock/static/js/src/lms/oa_response.js:595
+msgid "You can upload files with these file types: "
+msgstr "Ви можете завантажувати файли таких типів: "
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:603
+msgid "File type is not allowed."
+msgstr "Цей тип файлів не дозволений."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:647
+#: openassessment/xblock/static/js/src/lms/oa_response.js:653
+msgid "Describe "
+msgstr "Опишіть"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:647
+msgid "(required):"
+msgstr "(обов'язково)"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_response.js:667
+msgid "Thumbnail view of "
+msgstr "Мініатюра для"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_self.js:124
+msgid ""
+"If you leave this page without submitting your self assessment, you will "
+"lose any work you have done."
+msgstr "Якщо ви залишите цю сторінку без збереження вашого самооцінювання, ви втратите всі результати роботи"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_staff_area.js:129
+#: openassessment/xblock/static/js/src/lms/oa_staff_area.js:211
+msgid "Unexpected server error."
+msgstr "Неочікувана помилка на стороні серверу."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_staff_area.js:133
+msgid "You must provide a learner name."
+msgstr "Ви маєте вказати ім'я учня."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_staff_area.js:263
+msgid "Error getting the number of ungraded responses"
+msgstr "Помилка під час отримання кількості не перевірених відповідей."
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_staff_area.js:497
+msgid ""
+"If you leave this page without submitting your staff assessment, you will "
+"lose any work you have done."
+msgstr "Якщо ви залишите цю сторінку без збереження вашої оцінки викладача, ви втратите всі результати роботи"
+
+#: openassessment/xblock/static/js/openassessment-lms.min.js:1
+#: openassessment/xblock/static/js/src/lms/oa_training.js:116
+msgid "Feedback available for selection."
+msgstr "Відгук доступний для вибору."
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit.js:391
+msgid "Paragraph"
+msgstr "Параграф"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit.js:392
+msgid "Preformatted"
+msgstr "Відформатований"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit.js:393
+msgid "Heading 3"
+msgstr "Заголовок 3"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit.js:394
+msgid "Heading 4"
+msgstr "Заголовок 4"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit.js:395
+msgid "Heading 5"
+msgstr "Заголовок 5"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit.js:396
+msgid "Heading 6"
+msgstr "Заголовок 6"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_container_item.js:39
+msgid "Unnamed Option"
+msgstr "Опція без імені"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_container_item.js:49
+msgid "Not Selected"
+msgstr "Не обрано"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit.js:145
+msgid "Couldn't Save This Assignment"
+msgstr "Неможливо зберегти це завдання"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit.js:146
+msgid "Please correct the outlined fields."
+msgstr "Відкоригуйте позначені поля"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit.js:180
+msgid ""
+"This problem has already been released. Any changes will apply only to "
+"future assessments."
+msgstr "Це завдання вже було запущено. Будь-які зміни будуть застосовуватися тільки до майбутніх завдань."
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit_listeners.js:97
+msgid "Criterion Added"
+msgstr "Критерій додано"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit_listeners.js:98
+msgid ""
+"You have added a criterion. You will need to select an option for the "
+"criterion in the Learner Training step. To do this, click the Settings tab."
+msgstr "Ви додали критерій. Ви маєте вибрати опцію для цього критерію на кроці Навчання слухача. Щоб це зробити, клікніть на вкладці Налаштування."
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit_listeners.js:144
+#: openassessment/xblock/static/js/src/studio/oa_edit_listeners.js:179
+msgid "Option Deleted"
+msgstr "Опцію видалено"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit_listeners.js:145
+msgid ""
+"You have deleted an option. That option has been removed from its criterion "
+"in the sample responses in the Learner Training step. You might have to "
+"select a new option for the criterion."
+msgstr "Ви видалили опцію. Цю опцію було вилучено з її китерію у прикладі відповіді на кроці Навчання слухача. Вам слід обрати нову опцію для цього критерію."
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit_listeners.js:180
+msgid ""
+"You have deleted all the options for this criterion. The criterion has been "
+"removed from the sample responses in the Learner Training step."
+msgstr "Ви видалили всі опції цього критерію. Критерій було вилучено з прикладу відповіді на кроці Навчання слухача."
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit_listeners.js:206
+msgid "Criterion Deleted"
+msgstr "Критерій видалено"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit_listeners.js:207
+msgid ""
+"You have deleted a criterion. The criterion has been removed from the "
+"example responses in the Learner Training step."
+msgstr "Ви видалили критерій. Критерій було вилучено з прикладу відповіді на кроці Навчання слухача."
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit_listeners.js:376
+msgid "Warning"
+msgstr "Попередження"
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit_listeners.js:377
+msgid ""
+"Changes to steps that are not selected as part of the assignment will not be"
+" saved."
+msgstr "Зміни до кроків, котрі не обрано як частини завдання, не збережуться."
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit_settings.js:66
+msgid "File types can not be empty."
+msgstr "Поле типів файлів не може бути пустим."
+
+#: openassessment/xblock/static/js/openassessment-studio.min.js:1
+#: openassessment/xblock/static/js/src/studio/oa_edit_settings.js:76
+msgid "The following file types are not allowed: "
+msgstr "Наступні типи файлів не дозволені: "
