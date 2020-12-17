@@ -31,7 +31,7 @@ def filesystem_storage(request, key, filename=None):
                 raise Http404()
         content, metadata = get_content_metadata(request)
         if filename != None:
-            if isinstance(filename, unicode):
+            if isinstance(filename, str):
                 filename = filename.encode("utf-8")
             metadata['Filename'] = filename
         save_to_file(key, content, metadata)
