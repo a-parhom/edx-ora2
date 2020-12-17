@@ -56,7 +56,7 @@ def download_file(key):
         response = HttpResponse(f.read(), content_type=content_type)
 
     file_name = metadata.get("Filename", os.path.basename(os.path.dirname(file_path)))
-    response['Content-Disposition'] = 'attachment; filename=' + file_name.encode("utf-8")
+    response['Content-Disposition'] = 'attachment; filename=' + file_name
     return response
 
 
