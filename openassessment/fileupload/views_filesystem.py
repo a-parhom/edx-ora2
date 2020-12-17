@@ -117,7 +117,7 @@ def safe_save(path, content):
         raise exceptions.FileUploadInternalError(u"File upload root directory does not exist: %s" % root_directory)
     if not os.path.exists(dir_path):
         os.makedirs(dir_path)
-    with open(path, 'w') as f:
+    with open(path, 'wb') as f:
         f.write(content)
 
 
