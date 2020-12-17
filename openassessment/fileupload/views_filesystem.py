@@ -52,7 +52,7 @@ def download_file(key):
     with open(metadata_path) as f:
         metadata = json.load(f)
         content_type = metadata.get("Content-Type", 'application/octet-stream')
-    with open(file_path, 'r') as f:
+    with open(file_path, 'rb') as f:
         response = HttpResponse(f.read(), content_type=content_type)
 
     file_name = metadata.get("Filename", os.path.basename(os.path.dirname(file_path)))
