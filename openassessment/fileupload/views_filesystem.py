@@ -94,7 +94,7 @@ def save_to_file(key, content, metadata=None):
 
     safe_save(file_path, content)
     try:
-        safe_save(metadata_path, json.dumps(metadata))
+        safe_save(metadata_path, json.dumps(metadata).encode('utf-8'))
     except Exception:
         safe_remove(file_path)
         safe_remove(metadata_path)
